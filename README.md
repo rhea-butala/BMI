@@ -43,8 +43,10 @@ curl --location --request POST 'https://rhea-bmi.herokuapp.com/v1/calculate/bmi'
 # Api's
 
 
-  Api : /v1/calculate/bmi,
-  Method : POST,
+  Api : /v1/calculate/bmi
+  
+  Method : POST
+  
   Sample Request Body : [
     {
         "Gender": "Male",
