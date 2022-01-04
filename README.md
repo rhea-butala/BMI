@@ -2,7 +2,42 @@
 
 The application api's have been deployed to Heroku.
 
-# Postman collection for Heroku deployed API's
+# Curl
+
+curl --location --request POST 'https://rhea-bmi.herokuapp.com/v1/calculate/bmi' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "Gender": "Male",
+        "HeightCm": 171,
+        "WeightKg": 96
+    },
+    {
+        "Gender": "Male",
+        "HeightCm": 161,
+        "WeightKg": 85
+    },
+    {
+        "Gender": "Male",
+        "HeightCm": 180,
+        "WeightKg": 77
+    },
+    {
+        "Gender": "Female",
+        "HeightCm": 166,
+        "WeightKg": 62
+    },
+    {
+        "Gender": "Female",
+        "HeightCm": 150,
+        "WeightKg": 70
+    },
+    {
+        "Gender": "Female",
+        "HeightCm": 167,
+        "WeightKg": 82
+    }
+]'
   
 
 # Api's
