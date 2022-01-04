@@ -43,8 +43,8 @@ curl --location --request POST 'https://rhea-bmi.herokuapp.com/v1/calculate/bmi'
 # Api's
 
 
-  Api : /v1/calculate/bmi
-  Method : POST 
+  Api : /v1/calculate/bmi,
+  Method : POST,
   Sample Request Body : [
     {
         "Gender": "Male",
@@ -57,6 +57,33 @@ curl --location --request POST 'https://rhea-bmi.herokuapp.com/v1/calculate/bmi'
         "WeightKg": 85
     }
   ]
+
+Sample Response : 
+{
+    "success": true,
+    "message": "Done",
+    "data": {
+        "result": [
+            {
+                "Gender": "Male",
+                "HeightCm": 171,
+                "WeightKg": 96,
+                "Bmi": 32.8,
+                "Risk": "Medium risk",
+                "Cateogory": "Moderately obese"
+            },
+            {
+                "Gender": "Male",
+                "HeightCm": 161,
+                "WeightKg": 85,
+                "Bmi": 32.8,
+                "Risk": "Medium risk",
+                "Cateogory": "Moderately obese"
+            }
+        ],
+        "overweightCount": 0
+    }
+}
   
 
  
