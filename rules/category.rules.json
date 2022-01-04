@@ -1,0 +1,126 @@
+{
+    "category": [
+      {
+        "event": {
+          "type": "CATEGORY_RISK",
+          "params": {
+            "message": "Underweight"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 18.4,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "CATEGORY_RISK",
+          "params": {
+            "message": "Normal weight"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 18.5,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 24.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "CATEGORY_RISK",
+          "params": {
+            "message": "Overweight"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 25,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 29.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "CATEGORY_RISK",
+          "params": {
+            "message": "Moderately obese"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 30,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 34.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "CATEGORY_RISK",
+          "params": {
+            "message": "Severel Obese"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 35,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 39.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "CATEGORY_RISK",
+          "params": {
+            "message": "Very severely obese"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 40,
+              "operator": "greaterThanInclusive"
+            }
+          ]
+        }
+      }
+    ]
+  }

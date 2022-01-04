@@ -1,0 +1,126 @@
+{
+    "risk": [
+      {
+        "event": {
+          "type": "HEALTH_RISK",
+          "params": {
+            "message": "Malnutrition risk"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 18.4,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "HEALTH_RISK",
+          "params": {
+            "message": "Low risk"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 18.5,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 24.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "HEALTH_RISK",
+          "params": {
+            "message": "Enhanced risk"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 25,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 29.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "HEALTH_RISK",
+          "params": {
+            "message": "Medium risk"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 30,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 34.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "HEALTH_RISK",
+          "params": {
+            "message": "High risk"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 35,
+              "operator": "greaterThanInclusive"
+            },
+            {
+              "fact": "Bmi",
+              "value": 39.9,
+              "operator": "lessThanInclusive"
+            }
+          ]
+        }
+      },
+      {
+        "event": {
+          "type": "HEALTH_RISK",
+          "params": {
+            "message": "Very High risk"
+          }
+        },
+        "conditions": {
+          "all": [
+            {
+              "fact": "Bmi",
+              "value": 40,
+              "operator": "greaterThanInclusive"
+            }
+          ]
+        }
+      }
+    ]
+  }
