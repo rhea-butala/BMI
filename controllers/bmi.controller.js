@@ -13,12 +13,12 @@ class BmiController {
 					WeightKg:Joi.number().required()
 				}).unknown()).required()
 
-				const { error } = schema.validate(request.body);
+				const { error } = schema.validate(request.body, {abortEarly: false});
 				if(error) {
 					return response.status(400).send({
 						success: true,
 						message: 'Done',
-						data : error
+						data : error.message
 						
 					});
 				}

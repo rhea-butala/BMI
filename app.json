@@ -2,6 +2,6 @@
 {
   "name": "Node.js BMI",
   "description": "A basic Node.js API using Express ",
-  "repository": "https://github.com/rhea-butala/AppointmentScheduling",
+  "repository": "https://github.com/rhea-butala/BMI",
   "keywords": ["node", "express"]
 }
